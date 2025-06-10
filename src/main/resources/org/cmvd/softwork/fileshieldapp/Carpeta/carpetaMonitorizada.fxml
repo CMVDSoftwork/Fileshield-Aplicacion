@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.cmvd.softwork.fileshieldapp.Controller.Carpeta.CarpetaMonitorizadaController"
+            prefWidth="450" prefHeight="300">
+
+    <VBox spacing="20" alignment="CENTER"
+          AnchorPane.topAnchor="20" AnchorPane.bottomAnchor="20"
+          AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20">
+
+        <Button text="Seleccionar Carpeta"
+                fx:id="btnSeleccionarCarpeta"
+                onAction="#manejarSeleccionCarpeta"
+                prefWidth="300"/>
+
+        <Label fx:id="labelEstado" wrapText="true" style="-fx-font-size: 14px;" />
+
+        <HBox spacing="15" alignment="CENTER">
+            <PasswordField fx:id="inputContrasena" promptText="Ingresa la contraseña" />
+            <Button text="Iniciar Monitoreo"
+                    fx:id="btnIniciarMonitoreo"
+                    onAction="#iniciarMonitoreo"
+                    visible="false" />
+            <Button text="Eliminar Carpeta"
+                    fx:id="btnEliminarCarpeta"
+                    onAction="#eliminarCarpeta"
+                    visible="false" />
+        </HBox>
+
+    </VBox>
+</AnchorPane>

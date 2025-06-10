@@ -11,8 +11,10 @@ module org.cmvd.softwork.fileshieldapp {
 
     opens org.cmvd.softwork.fileshieldapp to javafx.fxml;
     exports org.cmvd.softwork.fileshieldapp;
-    exports org.cmvd.softwork.fileshieldapp.Controller;
-    opens org.cmvd.softwork.fileshieldapp.Controller to javafx.fxml;
     exports org.cmvd.softwork.fileshieldapp.DTO;
     opens org.cmvd.softwork.fileshieldapp.DTO to javafx.fxml;
+    exports org.cmvd.softwork.fileshieldapp.Controller.Usuario;
+    opens org.cmvd.softwork.fileshieldapp.Controller.Usuario to javafx.fxml;
+    exports org.cmvd.softwork.fileshieldapp.Controller.Carpeta;
+    opens org.cmvd.softwork.fileshieldapp.Controller.Carpeta to javafx.fxml;
 }

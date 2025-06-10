@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.cmvd.softwork.fileshieldapp.Controller.Usuario.CambiarContraseñaController" style="-fx-padding: 20;">
+    <Label text="Cambiar Contraseña" style="-fx-font-size: 20px;" />
+    <PasswordField fx:id="contrasenaActual" promptText="Ingrese su contraseña actual" />
+    <PasswordField fx:id="nuevaContraseña" promptText="Ingrese la nueva contraseña" />
+    <Button text="Cambiar contraseña" onAction="#handleCambiarContraseña" />
+    <Hyperlink text="← Volver al inicio de sesión" onAction="#volverAlLogin" />
+    <Label fx:id="mensajeExito" textFill="green" />
+    <Label fx:id="mensajeError" textFill="red" />
+</VBox>
